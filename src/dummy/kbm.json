@@ -1,0 +1,43 @@
+[
+  {
+    "id": "M012",
+    "mapel": "Matematika",
+    "tingkat": "Kelas X",
+    "rombel": [
+      {
+        "id": "10A",
+        "nama": "Kelas X A"
+      },
+      {
+        "id": "10B",
+        "nama": "Kelas X B"
+      }
+    ]
+  },
+  {
+    "id": "I233",
+    "mapel": "IPA",
+    "tingkat": "Kelas X",
+    "rombel": [
+      {
+        "id": "10A",
+        "nama": "Kelas X A"
+      },
+      {
+        "id": "10B",
+        "nama": "Kelas X B"
+      }
+    ]
+  },
+  {
+    "id": "M031",
+    "mapel": "Matematika",
+    "tingkat": "Kelas XI",
+    "rombel": [
+      {
+        "id": "11A",
+        "nama": "Kelas XI A"
+      }
+    ]
+  }
+]

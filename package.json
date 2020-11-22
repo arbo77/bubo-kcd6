@@ -1,0 +1,43 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@firebase/app": "0.6.13",
+    "@firebase/auth": "0.15.2",
+    "@firebase/messaging": "0.7.3",
+    "Dante2": "0.5.0-rc26",
+    "axios": "0.21.0",
+    "fine-uploader-wrappers": "1.0.1",
+    "firebase": "8.1.1",
+    "moment": "2.29.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-fine-uploader": "1.1.1",
+    "react-icons": "3.11.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.3",
+    "socket.io-client": "3.0.3",
+    "styled-components": "5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,125 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
+  background-color: #ffffff;
+  color: #1e1e1e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.25;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  25% {
+    opacity: 0.25;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+main.middle {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading svg {
+  opacity: 0.5;
+  animation: blink infinite 1s linear;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 1;
+}
+
+header > nav {
+  display: grid;
+  grid-template-columns: 2rem auto 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+header > nav a {
+  display: block;
+  padding: 1rem;
+}
+
+header > nav > div:nth-child(2) {
+  flex: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 1;
+}
+
+footer > nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > nav > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: inherit;
+  opacity: 0.35;
+  -webkit-tap-highlight-color: #eeeeee7c;
+}
+footer > nav > a.active {
+  opacity: 1;
+}
+
+a > svg {
+  font-size: 1.25rem;
+}
+
+.avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar.large {
+  height: 4rem;
+  width: 4rem;
+}

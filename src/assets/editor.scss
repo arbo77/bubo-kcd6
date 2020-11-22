@@ -1,0 +1,37 @@
+.Editor {
+  // font-family: sans-serif;
+  // text-align: left;
+  display: block;
+}
+
+.container-editor {
+  margin-top: 0px;
+  // margin-left: auto !important;
+  margin-right: auto !important;
+  margin-left: 2.1rem;
+  // width: 80%;
+}
+.container-editor.padding-top {
+  margin-top: 2rem;
+}
+.container-header {
+  margin-top: 0px;
+  margin-left: 2.1rem;
+}
+
+.overide-h1{
+  font-family: 'Cera Pro'!important;
+  margin-top: 0.4em!important;
+}
+.postContent {
+  font-family: "Cera Pro"!important;
+}
+
+/* Override default */
+// .public-DraftEditor-content {
+//     font-family: Georgia, "Times New Roman", Times, serif !important;
+// }
+// /* Override default */
+// .public-DraftEditorPlaceholder-inner {
+//     font-family: Georgia, "Times New Roman", Times, serif !important;
+// }

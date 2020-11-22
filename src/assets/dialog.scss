@@ -1,0 +1,123 @@
+
+dialog {
+  z-index: 3;
+  position: fixed;
+  border: none;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  article {
+    background-color: #ffffff;
+    min-width: 700px;
+    max-width: 900px;
+    min-height: 400px;
+    margin: auto 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px #14141433;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+      visibility: hidden;
+    }
+
+
+    @media (max-width: 600px) {
+      min-width: unset;
+      max-width: unset;
+      min-height: unset;
+      border-radius: 0;
+      box-shadow: unset;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+    }
+
+    section {
+      padding: 1rem 1rem 4rem;
+      margin: 0 .5rem;
+    }
+
+    header {
+      position: relative;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+
+      &>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        flex: 1;
+        font-size: 1em;
+        padding: 0 .5rem;
+        opacity: 1;
+        visibility: visible !important;
+      }
+
+      button {
+        cursor: pointer;
+        outline: none;
+        //width: fit-content;
+        background: transparent;
+        border: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+          background: #b5b5b569;
+        }
+
+        &:active {
+          opacity: .3;
+        }
+
+        &.action {
+          font-size: 1rem;
+          color: #37a6ff;
+          width: fit-content;
+          background: transparent;
+          border-radius: unset;
+        }
+      }
+    }
+  }
+
+  &.full {
+    justify-content: unset;
+    align-items: unset;
+    padding: 0;
+
+    article {
+      flex: 1;
+      margin: 0;
+      min-width: unset;
+      min-height: unset;
+      max-width: unset;
+      max-height: unset;
+    }
+  }
+
+}
